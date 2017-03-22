@@ -14,3 +14,11 @@ services:
         - SERVIDORLINUX=${servidorlinux}
         - IPSERVIDORLINUX=${ipservidorlinux}
         - USUARIO=${usuario}
+        - INTERFACEREDE=${interfacerede}
+        - DNSFORWARDIP=${DNSFORWARDIP}
+        - SYSVOLPATH=${sysvol}
+        - NETLOGONPATH=${netlogon}
+      volumes: 
+        - ${sysvol}:/home/sysvol
+        - ${netlogon}:/home/netlogon
+
