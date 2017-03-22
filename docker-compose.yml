@@ -1,0 +1,16 @@
+
+version: '2'
+services:
+    samba4dc:
+      build: ./samba4dc
+      image: samba4dc
+      restart: unless-stopped
+      network_mode: "host"
+      privileged: true
+      environment:
+        - DOMINIO=${dominio}
+        - PASSWORD=${password}
+        - SERVIDORDC=${servidordc}
+        - SERVIDORLINUX=${servidorlinux}
+        - IPSERVIDORLINUX=${ipservidorlinux}
+        - USUARIO=${usuario}
