@@ -15,7 +15,7 @@ services:
         - IPSERVIDORLINUX=${ipservidorlinux}
         - USUARIO=${usuario}
         - INTERFACEREDE=${interfacerede}
-        - DNSFORWARDIP=${DNSFORWARDIP}
+        - DNSFORWARDIP=${dnsforwardip}
         - SYSVOLPATH=${sysvol}
         - NETLOGONPATH=${netlogon}
       volumes: 
